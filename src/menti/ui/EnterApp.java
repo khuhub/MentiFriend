@@ -21,6 +21,16 @@ public class EnterApp extends JFrame {
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
+
+        signupButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SignUp frame = new SignUp();
+                frame.setVisible(true);
+                frame.setSize(800,400);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
     }
     public static void main(String[] args) {
         EnterApp m = new EnterApp();
