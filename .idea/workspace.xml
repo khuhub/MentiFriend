@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="mainPanel">
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/EnterApp.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/EnterApp.java" afterDir="false" />
+    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="enter app frame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/MentiFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/MentiFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/EnterApp.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/EnterApp.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/EnterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/EnterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/MentiFriend.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/MentiFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679509958425</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="enter app frame">
+      <created>1679510994630</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679510994630</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="set up gui" />
     <MESSAGE value="mainPanel" />
-    <option name="LAST_COMMIT_MESSAGE" value="mainPanel" />
+    <MESSAGE value="enter app frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="enter app frame" />
   </component>
 </project>
