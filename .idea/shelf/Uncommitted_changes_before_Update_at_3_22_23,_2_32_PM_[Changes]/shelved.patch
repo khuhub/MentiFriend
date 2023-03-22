@@ -1,0 +1,157 @@
+Index: src/menti/ui/MentiFriend.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package menti.ui;\n\nimport javax.swing.*;\nimport java.awt.event.ActionEvent;\nimport java.awt.event.ActionListener;\nimport java.util.Scanner;\n\npublic class MentiFriend extends JFrame{\n\n    private JPanel mainPanel;\n    private JLabel welcomeLabel;\n\n    private JLabel passwordLabel;\n    private JPasswordField passwordInput;\n    private JButton PasswordButton;\n    private JPasswordField login;\n\n    public MentiFriend() {\n        passwordButton.addActionListener(new ActionListener() {\n            @Override\n            public void actionPerformed(ActionEvent e) {\n                JOptionPane.showMessageDialog(passwordButton, \"you entered: \" + passwordInput.getText());\n            }\n        });\n    }\n\n    public static void main(String[] args){\n        MentiFriend m = new MentiFriend();\n        m.setContentPane(m.mainPanel);\n        m.setTitle(\"Hii\");\n        m.setSize(300,400);\n        m.setVisible(true);\n        m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n\n    }\n\n\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/menti/ui/MentiFriend.java b/src/menti/ui/MentiFriend.java
+--- a/src/menti/ui/MentiFriend.java	(revision 5e7db7d8ac37d552ba236b3a1beb417dc6d3e67f)
++++ b/src/menti/ui/MentiFriend.java	(date 1679509256085)
+@@ -1,37 +1,47 @@
+ package menti.ui;
+ 
+ import javax.swing.*;
++import java.awt.*;
+ import java.awt.event.ActionEvent;
+ import java.awt.event.ActionListener;
+-import java.util.Scanner;
+ 
+ public class MentiFriend extends JFrame{
+ 
+-    private JPanel mainPanel;
++    private JPanel loginPanel;
+     private JLabel welcomeLabel;
+ 
+     private JLabel passwordLabel;
+     private JPasswordField passwordInput;
+-    private JButton PasswordButton;
++    private JButton passwordButton;
+     private JPasswordField login;
+ 
++
+     public MentiFriend() {
++
++        //boolean change = false;
++
+         passwordButton.addActionListener(new ActionListener() {
+             @Override
+             public void actionPerformed(ActionEvent e) {
+-                JOptionPane.showMessageDialog(passwordButton, "you entered: " + passwordInput.getText());
++               // String correctPassword = .getText();
++              //  if(!passwordInput.getText().equals(correctPassword)){
++                    JOptionPane.showMessageDialog(passwordButton, "You entered the wrong password. Try again!");
++                //} else{
++                    //change = true;
++              //  }
+             }
++
+         });
+     }
+ 
+     public static void main(String[] args){
+         MentiFriend m = new MentiFriend();
+-        m.setContentPane(m.mainPanel);
+-        m.setTitle("Hii");
+-        m.setSize(300,400);
++        m.setContentPane(m.loginPanel);
++        m.setSize(800,400);
+         m.setVisible(true);
+         m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ 
++
+     }
+ 
+ 
+Index: src/menti/ui/MentiFriend.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<form xmlns=\"http://www.intellij.com/uidesigner/form/\" version=\"1\" bind-to-class=\"menti.ui.MentiFriend\">\n  <grid id=\"27dc6\" binding=\"mainPanel\" layout-manager=\"GridLayoutManager\" row-count=\"3\" column-count=\"5\" same-size-horizontally=\"false\" same-size-vertically=\"false\" hgap=\"-1\" vgap=\"-1\">\n    <margin top=\"0\" left=\"0\" bottom=\"0\" right=\"0\"/>\n    <constraints>\n      <xy x=\"24\" y=\"61\" width=\"558\" height=\"346\"/>\n    </constraints>\n    <properties>\n      <background color=\"-5606732\"/>\n    </properties>\n    <border type=\"etched\">\n      <font/>\n      <title-color color=\"-394759\"/>\n    </border>\n    <children>\n      <component id=\"473e\" class=\"javax.swing.JLabel\" binding=\"welcomeLabel\">\n        <constraints>\n          <grid row=\"0\" column=\"2\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\">\n            <minimum-size width=\"200\" height=\"30\"/>\n            <preferred-size width=\"300\" height=\"60\"/>\n            <maximum-size width=\"400\" height=\"90\"/>\n          </grid>\n        </constraints>\n        <properties>\n          <font name=\"Apple Braille\" size=\"26\" style=\"1\"/>\n          <foreground color=\"-394759\"/>\n          <text value=\"Welcome to MentiFriend\"/>\n        </properties>\n      </component>\n      <component id=\"186d6\" class=\"javax.swing.JLabel\" binding=\"passwordLabel\">\n        <constraints>\n          <grid row=\"1\" column=\"1\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\">\n            <minimum-size width=\"50\" height=\"50\"/>\n            <preferred-size width=\"100\" height=\"100\"/>\n            <maximum-size width=\"150\" height=\"150\"/>\n          </grid>\n        </constraints>\n        <properties>\n          <font name=\"Apple Braille\" size=\"18\" style=\"0\"/>\n          <foreground color=\"-394759\"/>\n          <text value=\"Password: \"/>\n        </properties>\n      </component>\n      <component id=\"9354e\" class=\"javax.swing.JPasswordField\" binding=\"passwordInput\">\n        <constraints>\n          <grid row=\"1\" column=\"2\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"8\" fill=\"1\" indent=\"0\" use-parent-layout=\"false\">\n            <minimum-size width=\"200\" height=\"20\"/>\n            <preferred-size width=\"300\" height=\"40\"/>\n            <maximum-size width=\"400\" height=\"60\"/>\n          </grid>\n        </constraints>\n        <properties>\n          <background color=\"-394759\"/>\n          <disabledTextColor color=\"-394759\"/>\n          <font name=\"Apple Braille\" size=\"18\" style=\"0\"/>\n          <foreground color=\"-16777216\"/>\n          <selectedTextColor color=\"-16777216\"/>\n          <text value=\"\"/>\n        </properties>\n      </component>\n      <component id=\"2ef66\" class=\"javax.swing.JButton\" binding=\"passwordButton\">\n        <constraints>\n          <grid row=\"2\" column=\"2\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"1\" indent=\"0\" use-parent-layout=\"false\">\n            <minimum-size width=\"200\" height=\"20\"/>\n            <preferred-size width=\"300\" height=\"40\"/>\n            <maximum-size width=\"400\" height=\"60\"/>\n          </grid>\n        </constraints>\n        <properties>\n          <background color=\"-5606732\"/>\n          <font name=\"Apple Braille\" size=\"18\" style=\"0\"/>\n          <foreground color=\"-2110509\"/>\n          <text value=\"Enter\"/>\n        </properties>\n      </component>\n      <hspacer id=\"e553e\">\n        <constraints>\n          <grid row=\"1\" column=\"3\" row-span=\"1\" col-span=\"1\" vsize-policy=\"1\" hsize-policy=\"0\" anchor=\"0\" fill=\"1\" indent=\"0\" use-parent-layout=\"false\">\n            <minimum-size width=\"50\" height=\"50\"/>\n            <preferred-size width=\"100\" height=\"100\"/>\n            <maximum-size width=\"150\" height=\"150\"/>\n          </grid>\n        </constraints>\n      </hspacer>\n      <hspacer id=\"d3458\">\n        <constraints>\n          <grid row=\"1\" column=\"4\" row-span=\"1\" col-span=\"1\" vsize-policy=\"1\" hsize-policy=\"6\" anchor=\"0\" fill=\"1\" indent=\"0\" use-parent-layout=\"false\"/>\n        </constraints>\n      </hspacer>\n      <hspacer id=\"f69ad\">\n        <constraints>\n          <grid row=\"1\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"1\" hsize-policy=\"6\" anchor=\"0\" fill=\"1\" indent=\"0\" use-parent-layout=\"false\"/>\n        </constraints>\n      </hspacer>\n    </children>\n  </grid>\n</form>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/menti/ui/MentiFriend.form b/src/menti/ui/MentiFriend.form
+--- a/src/menti/ui/MentiFriend.form	(revision 5e7db7d8ac37d552ba236b3a1beb417dc6d3e67f)
++++ b/src/menti/ui/MentiFriend.form	(date 1679506515908)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="menti.ui.MentiFriend">
+-  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++  <grid id="27dc6" binding="loginPanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+     <margin top="0" left="0" bottom="0" right="0"/>
+     <constraints>
+       <xy x="24" y="61" width="558" height="346"/>
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"Palette2\">\n    <group name=\"Swing\">\n      <item class=\"com.intellij.uiDesigner.HSpacer\" tooltip-text=\"Horizontal Spacer\" icon=\"/com/intellij/uiDesigner/icons/hspacer.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"1\" hsize-policy=\"6\" anchor=\"0\" fill=\"1\" />\n      </item>\n      <item class=\"com.intellij.uiDesigner.VSpacer\" tooltip-text=\"Vertical Spacer\" icon=\"/com/intellij/uiDesigner/icons/vspacer.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"1\" anchor=\"0\" fill=\"2\" />\n      </item>\n      <item class=\"javax.swing.JPanel\" icon=\"/com/intellij/uiDesigner/icons/panel.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"3\" hsize-policy=\"3\" anchor=\"0\" fill=\"3\" />\n      </item>\n      <item class=\"javax.swing.JScrollPane\" icon=\"/com/intellij/uiDesigner/icons/scrollPane.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"7\" hsize-policy=\"7\" anchor=\"0\" fill=\"3\" />\n      </item>\n      <item class=\"javax.swing.JButton\" icon=\"/com/intellij/uiDesigner/icons/button.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"3\" anchor=\"0\" fill=\"1\" />\n        <initial-values>\n          <property name=\"text\" value=\"Button\" />\n        </initial-values>\n      </item>\n      <item class=\"javax.swing.JRadioButton\" icon=\"/com/intellij/uiDesigner/icons/radioButton.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"3\" anchor=\"8\" fill=\"0\" />\n        <initial-values>\n          <property name=\"text\" value=\"RadioButton\" />\n        </initial-values>\n      </item>\n      <item class=\"javax.swing.JLabel\" icon=\"/com/intellij/uiDesigner/icons/label.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"8\" fill=\"0\" />\n        <initial-values>\n          <property name=\"text\" value=\"Label\" />\n        </initial-values>\n      </item>\n      <item class=\"javax.swing.JCheckBox\" icon=\"/com/intellij/uiDesigner/icons/checkBox.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"3\" anchor=\"8\" fill=\"0\" />\n        <initial-values>\n          <property name=\"text\" value=\"CheckBox\" />\n        </initial-values>\n      </item>\n      <item class=\"javax.swing.JTextField\" icon=\"/com/intellij/uiDesigner/icons/textField.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"8\" fill=\"1\">\n          <preferred-size width=\"150\" height=\"-1\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JFormattedTextField\" icon=\"/com/intellij/uiDesigner/icons/formattedTextField.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"8\" fill=\"1\">\n          <preferred-size width=\"150\" height=\"-1\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JTextArea\" icon=\"/com/intellij/uiDesigner/icons/textArea.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"6\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"150\" height=\"50\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JPasswordField\" icon=\"/com/intellij/uiDesigner/icons/passwordField.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"8\" fill=\"1\">\n          <preferred-size width=\"150\" height=\"-1\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JTextPane\" icon=\"/com/intellij/uiDesigner/icons/textPane.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"6\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"150\" height=\"50\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JEditorPane\" icon=\"/com/intellij/uiDesigner/icons/editorPane.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"6\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"150\" height=\"50\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JComboBox\" icon=\"/com/intellij/uiDesigner/icons/comboBox.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"2\" anchor=\"8\" fill=\"1\" />\n      </item>\n      <item class=\"javax.swing.JTable\" icon=\"/com/intellij/uiDesigner/icons/table.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"6\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"150\" height=\"50\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JList\" icon=\"/com/intellij/uiDesigner/icons/list.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"2\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"150\" height=\"50\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JTree\" icon=\"/com/intellij/uiDesigner/icons/tree.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"6\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"150\" height=\"50\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JTabbedPane\" icon=\"/com/intellij/uiDesigner/icons/tabbedPane.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"3\" hsize-policy=\"3\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"200\" height=\"200\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JSplitPane\" icon=\"/com/intellij/uiDesigner/icons/splitPane.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"3\" hsize-policy=\"3\" anchor=\"0\" fill=\"3\">\n          <preferred-size width=\"200\" height=\"200\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JSpinner\" icon=\"/com/intellij/uiDesigner/icons/spinner.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"true\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"8\" fill=\"1\" />\n      </item>\n      <item class=\"javax.swing.JSlider\" icon=\"/com/intellij/uiDesigner/icons/slider.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"8\" fill=\"1\" />\n      </item>\n      <item class=\"javax.swing.JSeparator\" icon=\"/com/intellij/uiDesigner/icons/separator.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"6\" anchor=\"0\" fill=\"3\" />\n      </item>\n      <item class=\"javax.swing.JProgressBar\" icon=\"/com/intellij/uiDesigner/icons/progressbar.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"0\" fill=\"1\" />\n      </item>\n      <item class=\"javax.swing.JToolBar\" icon=\"/com/intellij/uiDesigner/icons/toolbar.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"0\" fill=\"1\">\n          <preferred-size width=\"-1\" height=\"20\" />\n        </default-constraints>\n      </item>\n      <item class=\"javax.swing.JToolBar$Separator\" icon=\"/com/intellij/uiDesigner/icons/toolbarSeparator.svg\" removable=\"false\" auto-create-binding=\"false\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"1\" />\n      </item>\n      <item class=\"javax.swing.JScrollBar\" icon=\"/com/intellij/uiDesigner/icons/scrollbar.svg\" removable=\"false\" auto-create-binding=\"true\" can-attach-label=\"false\">\n        <default-constraints vsize-policy=\"6\" hsize-policy=\"0\" anchor=\"0\" fill=\"2\" />\n      </item>\n    </group>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+--- a/.idea/uiDesigner.xml	(revision 5e7db7d8ac37d552ba236b3a1beb417dc6d3e67f)
++++ b/.idea/uiDesigner.xml	(date 1679506983038)
+@@ -120,5 +120,6 @@
+         <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+       </item>
+     </group>
++    <group name="signUp" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4ef4f4e6-067a-4559-bc05-262949ea01ed\" name=\"Changes\" comment=\"mainPanel\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/menti/ui/MentiFriend.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/menti/ui/MentiFriend.form\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/menti/ui/MentiFriend.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/menti/ui/MentiFriend.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2NL3GiWNqYTk3nDcZwB5eUbqJ07\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH\": \"86\",\n    \"UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW\": \"true\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\",\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4ef4f4e6-067a-4559-bc05-262949ea01ed\" name=\"Changes\" comment=\"\" />\n      <created>1679429441684</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1679429441684</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"set up gui\">\n      <created>1679429920951</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1679429920951</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"mainPanel\">\n      <created>1679430239408</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1679430239408</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"mainPanel\">\n      <created>1679430308273</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1679430308273</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"mainPanel\">\n      <created>1679432343561</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1679432343561</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"set up gui\" />\n    <MESSAGE value=\"mainPanel\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mainPanel\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5e7db7d8ac37d552ba236b3a1beb417dc6d3e67f)
++++ b/.idea/workspace.xml	(date 1679507404626)
+@@ -34,18 +34,18 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "86",
+-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "preferences.lookFeel"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;86&quot;,
++    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -83,7 +83,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1679432343561</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="mainPanel">
++      <created>1679506132917</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1679506132917</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
