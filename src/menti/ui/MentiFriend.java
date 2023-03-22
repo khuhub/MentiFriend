@@ -13,14 +13,16 @@ public class MentiFriend extends JFrame{
     private JButton passwordButton;
     private JPasswordField login;
 
-    private JPanel enterAppPanel;
-
 
     public MentiFriend() {
         passwordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(passwordButton, "you entered: " + passwordInput.getText());
+                EnterApp frame = new EnterApp();
+                frame.setVisible(true);
+                frame.setSize(800,400);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
     }
@@ -30,7 +32,6 @@ public class MentiFriend extends JFrame{
         m.setContentPane(m.loginPanel);
         m.setSize(800,400);
         m.setVisible(true);
-        m.setContentPane(m.enterAppPanel);
         m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
