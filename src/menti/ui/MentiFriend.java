@@ -6,11 +6,13 @@ import java.awt.event.InputMethodListener;
 
 public class MentiFriend {
     private JPanel mainPanel;
-    private JPasswordField login;
     private JLabel welcomeLabel;
+    private JLabel passwordLabel;
+    private JPasswordField passwordInput;
+    private JButton passwordButton;
+    private JPasswordField login;
 
-
-public MentiFriend() {
+    public MentiFriend() {
     login.addInputMethodListener(new InputMethodListener() {
         @Override
         public void inputMethodTextChanged(InputMethodEvent event) {
