@@ -8,14 +8,18 @@ import java.util.Scanner;
 public class MentiFriend extends JFrame{
 
     private JPanel mainPanel;
+    private JLabel welcomeLabel;
+
+    private JLabel passwordLabel;
     private JPasswordField passwordInput;
-    private JButton enterPasswordButton;
+    private JButton PasswordButton;
+    private JPasswordField login;
 
     public MentiFriend() {
-        enterPasswordButton.addActionListener(new ActionListener() {
+        passwordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(enterPasswordButton, "you entered: " + passwordInput.getText());
+                JOptionPane.showMessageDialog(passwordButton, "you entered: " + passwordInput.getText());
             }
         });
     }
