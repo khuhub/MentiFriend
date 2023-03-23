@@ -13,8 +13,8 @@ public class SignUp extends JFrame{
     private JTextField passwordInput;
     private JLabel passwordLabel;
     private JButton createAccountButton;
-    protected String userName;
-    protected String password;
+    protected static String userName;
+    protected static String password;
 
     public SignUp() {
         setContentPane(signupPanel);
@@ -33,5 +33,13 @@ public class SignUp extends JFrame{
 
     public static void main(String[] args){
 
+    }
+
+    public static String getUserName(){
+        return userName;
+    }
+
+    public static String getPassword(){
+        return password;
     }
 }
