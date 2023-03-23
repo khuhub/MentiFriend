@@ -12,6 +12,7 @@ public class EnterApp extends JFrame {
     private JButton signupButton;
 
     public EnterApp(){
+        setContentPane(enterPanel);
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

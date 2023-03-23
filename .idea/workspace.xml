@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="enter app frame">
-    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="mainPanel">
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/SignUp.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="sign up added to enterapp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menti/ui/EnterApp.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/EnterApp.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menti/ui/EnterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/EnterApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/MentiFriend.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/MentiFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/SignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
