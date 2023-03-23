@@ -3,7 +3,7 @@ package menti.ui;
 import javax.swing.*;
 
 public class ToDo extends JFrame {
-    private JPanel panel1;
+    private JPanel toDoPanel;
     private JCheckBox ToDoCheck1;
     private JCheckBox ToDoCheck2;
     private JCheckBox ToDoCheck3;
@@ -42,4 +42,8 @@ public class ToDo extends JFrame {
     private JTextField longTermEnterText9;
     private JLabel toDoLabel;
     private JLabel longTermLabel;
+
+    public ToDo(){
+        setContentPane(toDoPanel);
+    }
 }
