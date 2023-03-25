@@ -11,6 +11,8 @@ public class EnterApp extends JFrame {
     private JButton loginButton;
     private JButton signupButton;
 
+    private static boolean signedUp = false;
+
     public EnterApp(){
         setContentPane(enterPanel);
         loginButton.addActionListener(new ActionListener() {
@@ -26,10 +28,16 @@ public class EnterApp extends JFrame {
         signupButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                SignUp frame = new SignUp();
-                frame.setVisible(true);
-                frame.setSize(800,500);
-                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                if (signedUp == false) {
+                    SignUp frame = new SignUp();
+                    signedUp = true;
+                    frame.setVisible(true);
+                    frame.setSize(800,500);
+                    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                }
+                else {
+                    JOptionPane.showMessageDialog(signupButton, "You have already created an account");
+                }
             }
         });
     }

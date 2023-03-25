@@ -39,6 +39,7 @@
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <selected value="false"/>
           <text value=""/>
         </properties>
       </component>
@@ -240,7 +241,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value=""/>
+        </properties>
       </component>
       <component id="2d7cd" class="javax.swing.JTextField" binding="toDoEnterText9">
         <constraints>
@@ -304,7 +307,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value=""/>
+        </properties>
       </component>
       <component id="5c03c" class="javax.swing.JTextField" binding="longTermEnterText8">
         <constraints>
