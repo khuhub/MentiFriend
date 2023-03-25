@@ -23,7 +23,7 @@ public class SignUp extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 EnterApp frame = new EnterApp();
                 frame.setVisible(true);
-                frame.setSize(800,400);
+                frame.setSize(800,500);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 userName = userNameInput.getText();
                 password = passwordInput.getText();

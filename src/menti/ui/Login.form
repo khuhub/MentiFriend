@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="loginPanel" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="24" y="61" width="558" height="346"/>
+      <xy x="24" y="61" width="568" height="346"/>
     </constraints>
     <properties>
       <background color="-4955277"/>
@@ -118,6 +118,19 @@
         <properties>
           <background color="-394759"/>
           <foreground color="-16777216"/>
+        </properties>
+      </component>
+      <component id="3ac2" class="javax.swing.JButton" binding="returnEnterButton">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="50" height="20"/>
+            <preferred-size width="100" height="40"/>
+            <maximum-size width="150" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-2110509"/>
+          <text value="Home"/>
         </properties>
       </component>
     </children>

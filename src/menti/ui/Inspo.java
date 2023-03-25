@@ -13,6 +13,7 @@ public class Inspo extends JFrame{
     private JToolBar menuOptions;
     private JLabel inspoLabel;
     private JButton generateInspoButton;
+    private JButton logOutButton;
 
     private String[] quotes = {"When you have a dream, you've got to grab it and never let go", "Nothing is impossible, the word itself says 'I'm possible!'",
                                 "It is often the small steps, not the giant leaps, that bring about the most lasting change.",
@@ -37,7 +38,7 @@ public class Inspo extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 ToDo frame = new ToDo();
                 frame.setVisible(true);
-                frame.setSize(800,400);
+                frame.setSize(800,500);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
@@ -57,6 +58,15 @@ public class Inspo extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 inspoLabel.setText(quotes[(int)(Math.random() * 26)]);
+            }
+        });
+        logOutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                EnterApp frame = new EnterApp();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
     }

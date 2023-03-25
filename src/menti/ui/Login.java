@@ -2,7 +2,6 @@ package menti.ui;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import menti.ui.SignUp;
 
 public class Login extends JFrame{
 
@@ -14,6 +13,7 @@ public class Login extends JFrame{
     private JButton passwordButton;
     private JTextField userNameInput;
     private JLabel userNameLabel;
+    private JButton returnEnterButton;
     private JPasswordField login;
 
 
@@ -26,11 +26,20 @@ public class Login extends JFrame{
                     //move on to menu screen
                     Inspo frame = new Inspo();
                     frame.setVisible(true);
-                    frame.setSize(800,400);
+                    frame.setSize(800,500);
                     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 } else {
                     JOptionPane.showMessageDialog(passwordButton, "Invalid login attempt");
                 }
+            }
+        });
+        returnEnterButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                EnterApp frame = new EnterApp();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
     }

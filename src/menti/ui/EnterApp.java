@@ -18,7 +18,7 @@ public class EnterApp extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 Login frame = new Login();
                 frame.setVisible(true);
-                frame.setSize(800,400);
+                frame.setSize(800,500);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
@@ -28,7 +28,7 @@ public class EnterApp extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 SignUp frame = new SignUp();
                 frame.setVisible(true);
-                frame.setSize(800,400);
+                frame.setSize(800,500);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
@@ -36,7 +36,7 @@ public class EnterApp extends JFrame {
     public static void main(String[] args) {
         EnterApp m = new EnterApp();
         m.setContentPane(m.enterPanel);
-        m.setSize(800,400);
+        m.setSize(800,500);
         m.setVisible(true);
         m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

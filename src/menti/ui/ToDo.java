@@ -1,6 +1,8 @@
 package menti.ui;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ToDo extends JFrame {
     private JPanel toDoPanel;
@@ -42,8 +44,47 @@ public class ToDo extends JFrame {
     private JTextField longTermEnterText9;
     private JLabel toDoLabel;
     private JLabel longTermLabel;
+    private JToolBar menuOptions;
+    private JButton toDoButton;
+    private JButton diaryButton;
+    private JButton inspoButton;
+    private JButton gameButton;
+    private JButton logOutButton;
 
     public ToDo(){
         setContentPane(toDoPanel);
+        diaryButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        inspoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Inspo frame = new Inspo();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            }
+        });
+        gameButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        logOutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                EnterApp frame = new EnterApp();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
     }
+
+
 }
