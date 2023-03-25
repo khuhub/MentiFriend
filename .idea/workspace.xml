@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/Inspo.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/Inspo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/ToDo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/ToDo.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/ToDo.java" afterDir="false" />
-    </list>
+    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="inspo panel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679596114649</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="inspo panel">
+      <created>1679602618781</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679602618782</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +135,7 @@
     <MESSAGE value="enter app frame" />
     <MESSAGE value="username in login" />
     <MESSAGE value="sign up added to enterapp" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign up added to enterapp" />
+    <MESSAGE value="inspo panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="inspo panel" />
   </component>
 </project>
