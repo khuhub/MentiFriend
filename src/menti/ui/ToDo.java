@@ -49,6 +49,7 @@ public class ToDo extends JFrame {
     private JButton inspoButton;
     private JButton gameButton;
     private JButton logOutButton;
+    private JButton clearButton;
 
     private static String toDoText1;
     private static String toDoText2;
@@ -138,7 +139,10 @@ public class ToDo extends JFrame {
         diaryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Diary frame = new Diary();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
         inspoButton.addActionListener(new ActionListener() {
@@ -400,6 +404,32 @@ public class ToDo extends JFrame {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 longTermBox9 = longTermCheck9.isSelected();
+            }
+        });
+
+
+        clearButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ToDoCheck1.setSelected(false);
+                ToDoCheck2.setSelected(false);
+                ToDoCheck3.setSelected(false);
+                ToDoCheck4.setSelected(false);
+                ToDoCheck5.setSelected(false);
+                ToDoCheck6.setSelected(false);
+                ToDoCheck7.setSelected(false);
+                ToDoCheck8.setSelected(false);
+                ToDoCheck9.setSelected(false);
+
+                longTermCheck1.setSelected(false);
+                longTermCheck2.setSelected(false);
+                longTermCheck3.setSelected(false);
+                longTermCheck4.setSelected(false);
+                longTermCheck5.setSelected(false);
+                longTermCheck6.setSelected(false);
+                longTermCheck7.setSelected(false);
+                longTermCheck8.setSelected(false);
+                longTermCheck9.setSelected(false);
             }
         });
     }
