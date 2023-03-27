@@ -421,6 +421,16 @@ public class ToDo extends JFrame {
                 ToDoCheck8.setSelected(false);
                 ToDoCheck9.setSelected(false);
 
+                toDoEnterText1.setText("");
+                toDoEnterText2.setText("");
+                toDoEnterText3.setText("");
+                toDoEnterText4.setText("");
+                toDoEnterText5.setText("");
+                toDoEnterText6.setText("");
+                toDoEnterText7.setText("");
+                toDoEnterText8.setText("");
+                toDoEnterText9.setText("");
+
                 longTermCheck1.setSelected(false);
                 longTermCheck2.setSelected(false);
                 longTermCheck3.setSelected(false);
@@ -430,6 +440,17 @@ public class ToDo extends JFrame {
                 longTermCheck7.setSelected(false);
                 longTermCheck8.setSelected(false);
                 longTermCheck9.setSelected(false);
+
+                longTermEnterText1.setText("");
+                longTermEnterText2.setText("");
+                longTermEnterText3.setText("");
+                longTermEnterText4.setText("");
+                longTermEnterText5.setText("");
+                longTermEnterText6.setText("");
+                longTermEnterText7.setText("");
+                longTermEnterText8.setText("");
+                longTermEnterText9.setText("");
+
             }
         });
     }
