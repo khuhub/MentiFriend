@@ -45,7 +45,10 @@ public class Inspo extends JFrame{
         diaryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Diary frame = new Diary();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
         gameButton.addActionListener(new ActionListener() {
@@ -69,5 +72,6 @@ public class Inspo extends JFrame{
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
+
     }
 }
