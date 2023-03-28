@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="diary">
+    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/menti/ui/Game.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menti/ui/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menti/ui/Diary.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Diary.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menti/ui/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/EnterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/EnterApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menti/ui/Inspo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Inspo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/Inspo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Inspo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/ToDo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/ToDo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menti/ui/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/ToDo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +48,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "128",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "97",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "346",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "220",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -150,6 +159,17 @@
     </task>
     <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

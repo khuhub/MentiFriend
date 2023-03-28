@@ -5,17 +5,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Inspo extends JFrame{
+
+    //items on user interface
     private JPanel inspoPanel;
     private JButton toDoButton;
     private JButton diaryButton;
     private JButton inspoButton;
     private JButton gameButton;
-    private JToolBar menuOptions;
     private JLabel inspoLabel;
     private JButton generateInspoButton;
     private JButton logOutButton;
+    private JTextPane textPane1;
 
-    private String[] quotes = {"When you have a dream, you've got to grab it and never let go", "Nothing is impossible, the word itself says 'I'm possible!'",
+    private String[] quotes = {"When you have a dream, you've got to grab it and never let go", "Nothing is impossible, the word itself says I'm possible!",
                                 "It is often the small steps, not the giant leaps, that bring about the most lasting change.",
                                 "If you want to lift yourself up, lift up someone else.", "Attitude is the 'little' thing that makes a big difference",
                                 "We will fail when we fail to try.", "All our dreams can come true, if we have the courage to pursue them",
@@ -32,7 +34,10 @@ public class Inspo extends JFrame{
                                 "Life is like riding a bicycle. To keep your balance, you must keep moving"};
 
     public Inspo() {
+
         setContentPane(inspoPanel);
+
+        //when toDoButton is clicked, change screen to ToDo screen
         toDoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -42,6 +47,8 @@ public class Inspo extends JFrame{
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
+
+        //when diaryButton is clicked, change screen to Diary screen
         diaryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -51,18 +58,27 @@ public class Inspo extends JFrame{
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
+
+        //when gameButton is clicked, change screen to Game screen
         gameButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Game frame = new Game();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
+
+        //when generateInspoButton is clicked, change the quote text to a random quote in quotes
         generateInspoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 inspoLabel.setText(quotes[(int)(Math.random() * 26)]);
             }
         });
+
+        //when logOutButton is clicked, change screen to EnterApp screen
         logOutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -72,6 +88,6 @@ public class Inspo extends JFrame{
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
-
     }
+
 }

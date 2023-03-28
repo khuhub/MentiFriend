@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="menti.ui.ToDo">
-  <grid id="27dc6" binding="toDoPanel" layout-manager="GridLayoutManager" row-count="12" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="toDoPanel" layout-manager="GridLayoutManager" row-count="14" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="19" y="20" width="757" height="457"/>
+      <xy x="19" y="20" width="915" height="457"/>
     </constraints>
     <properties>
       <background color="-1328258"/>
@@ -24,7 +24,7 @@
       </component>
       <component id="5479c" class="javax.swing.JLabel" binding="longTermLabel">
         <constraints>
-          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="28"/>
           </grid>
         </constraints>
@@ -34,24 +34,16 @@
           <text value="Long Term Goals"/>
         </properties>
       </component>
-      <component id="f670" class="javax.swing.JCheckBox" binding="ToDoCheck1">
+      <component id="f670" class="javax.swing.JCheckBox" binding="toDoCheck1">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <selected value="false"/>
           <text value=""/>
         </properties>
       </component>
-      <component id="a39c4" class="javax.swing.JCheckBox" binding="ToDoCheck2">
-        <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="f9215" class="javax.swing.JCheckBox" binding="ToDoCheck3">
+      <component id="a39c4" class="javax.swing.JCheckBox" binding="toDoCheck2">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -59,7 +51,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="fe9a2" class="javax.swing.JCheckBox" binding="ToDoCheck4">
+      <component id="f9215" class="javax.swing.JCheckBox" binding="toDoCheck3">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -67,7 +59,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="bc3d9" class="javax.swing.JCheckBox" binding="ToDoCheck5">
+      <component id="fe9a2" class="javax.swing.JCheckBox" binding="toDoCheck4">
         <constraints>
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -75,7 +67,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="ebc25" class="javax.swing.JCheckBox" binding="ToDoCheck6">
+      <component id="bc3d9" class="javax.swing.JCheckBox" binding="toDoCheck5">
         <constraints>
           <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -83,7 +75,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="22d28" class="javax.swing.JCheckBox" binding="ToDoCheck7">
+      <component id="ebc25" class="javax.swing.JCheckBox" binding="toDoCheck6">
         <constraints>
           <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -91,7 +83,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="56ea8" class="javax.swing.JCheckBox" binding="ToDoCheck8">
+      <component id="22d28" class="javax.swing.JCheckBox" binding="toDoCheck7">
         <constraints>
           <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -99,7 +91,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="cd1c2" class="javax.swing.JCheckBox" binding="ToDoCheck9">
+      <component id="56ea8" class="javax.swing.JCheckBox" binding="toDoCheck8">
         <constraints>
           <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -107,9 +99,17 @@
           <text value=""/>
         </properties>
       </component>
+      <component id="cd1c2" class="javax.swing.JCheckBox" binding="toDoCheck9">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
       <component id="1bf09" class="javax.swing.JCheckBox" binding="longTermCheck1">
         <constraints>
-          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -117,7 +117,7 @@
       </component>
       <component id="295a0" class="javax.swing.JCheckBox" binding="longTermCheck2">
         <constraints>
-          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -125,7 +125,7 @@
       </component>
       <component id="b9cde" class="javax.swing.JCheckBox" binding="longTermCheck3">
         <constraints>
-          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -133,7 +133,7 @@
       </component>
       <component id="193f9" class="javax.swing.JCheckBox" binding="longTermCheck4">
         <constraints>
-          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -141,7 +141,7 @@
       </component>
       <component id="44a27" class="javax.swing.JCheckBox" binding="longTermCheck5">
         <constraints>
-          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -149,7 +149,7 @@
       </component>
       <component id="ee90c" class="javax.swing.JCheckBox" binding="longTermCheck6">
         <constraints>
-          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -157,7 +157,7 @@
       </component>
       <component id="87f95" class="javax.swing.JCheckBox" binding="longTermCheck7">
         <constraints>
-          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -165,7 +165,7 @@
       </component>
       <component id="6485b" class="javax.swing.JCheckBox" binding="longTermCheck8">
         <constraints>
-          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -173,7 +173,7 @@
       </component>
       <component id="2a366" class="javax.swing.JCheckBox" binding="longTermCheck9">
         <constraints>
-          <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>
@@ -181,7 +181,7 @@
       </component>
       <component id="b3f8" class="javax.swing.JTextField" binding="toDoEnterText1">
         <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -189,7 +189,7 @@
       </component>
       <component id="72d80" class="javax.swing.JTextField" binding="toDoEnterText2">
         <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -197,7 +197,7 @@
       </component>
       <component id="2e97a" class="javax.swing.JTextField" binding="toDoEnterText3">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -205,7 +205,7 @@
       </component>
       <component id="37637" class="javax.swing.JTextField" binding="toDoEnterText4">
         <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -213,7 +213,7 @@
       </component>
       <component id="71cbd" class="javax.swing.JTextField" binding="toDoEnterText5">
         <constraints>
-          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -221,7 +221,7 @@
       </component>
       <component id="ee486" class="javax.swing.JTextField" binding="toDoEnterText6">
         <constraints>
-          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -229,7 +229,7 @@
       </component>
       <component id="81622" class="javax.swing.JTextField" binding="toDoEnterText7">
         <constraints>
-          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -237,7 +237,7 @@
       </component>
       <component id="284e" class="javax.swing.JTextField" binding="toDoEnterText8">
         <constraints>
-          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -247,7 +247,7 @@
       </component>
       <component id="2d7cd" class="javax.swing.JTextField" binding="toDoEnterText9">
         <constraints>
-          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -255,7 +255,7 @@
       </component>
       <component id="7a262" class="javax.swing.JTextField" binding="longTermEnterText1">
         <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -263,7 +263,7 @@
       </component>
       <component id="135bc" class="javax.swing.JTextField" binding="longTermEnterText2">
         <constraints>
-          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -271,7 +271,7 @@
       </component>
       <component id="b6346" class="javax.swing.JTextField" binding="longTermEnterText3">
         <constraints>
-          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -279,7 +279,7 @@
       </component>
       <component id="65117" class="javax.swing.JTextField" binding="longTermEnterText4">
         <constraints>
-          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -287,7 +287,7 @@
       </component>
       <component id="d08d4" class="javax.swing.JTextField" binding="longTermEnterText5">
         <constraints>
-          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -295,7 +295,7 @@
       </component>
       <component id="bc5f8" class="javax.swing.JTextField" binding="longTermEnterText6">
         <constraints>
-          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -303,7 +303,7 @@
       </component>
       <component id="d4772" class="javax.swing.JTextField" binding="longTermEnterText7">
         <constraints>
-          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -313,7 +313,7 @@
       </component>
       <component id="5c03c" class="javax.swing.JTextField" binding="longTermEnterText8">
         <constraints>
-          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -321,96 +321,18 @@
       </component>
       <component id="d75fa" class="javax.swing.JTextField" binding="longTermEnterText9">
         <constraints>
-          <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <toolbar id="e2da" binding="menuOptions">
-        <constraints>
-          <grid row="11" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="300" height="30"/>
-            <preferred-size width="400" height="60"/>
-            <maximum-size width="500" height="90"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-4950962"/>
-          <foreground color="-7893836"/>
-        </properties>
-        <border type="none"/>
-        <children>
-          <component id="c79b0" class="javax.swing.JButton" binding="toDoButton">
-            <constraints/>
-            <properties>
-              <background color="-394759"/>
-              <font name="Apple Braille" size="18" style="0"/>
-              <foreground color="-4495541"/>
-              <maximumSize width="150" height="90"/>
-              <minimumSize width="50" height="30"/>
-              <preferredSize width="100" height="60"/>
-              <text value="To-Do"/>
-            </properties>
-          </component>
-          <hspacer id="a9a44">
-            <constraints/>
-          </hspacer>
-          <component id="8ee2c" class="javax.swing.JButton" binding="diaryButton">
-            <constraints/>
-            <properties>
-              <background color="-394759"/>
-              <font name="Apple Braille" size="18" style="0"/>
-              <foreground color="-4495541"/>
-              <maximumSize width="150" height="90"/>
-              <minimumSize width="50" height="30"/>
-              <preferredSize width="100" height="60"/>
-              <text value="Diary"/>
-            </properties>
-          </component>
-          <hspacer id="9c8ac">
-            <constraints/>
-          </hspacer>
-          <component id="e03f9" class="javax.swing.JButton" binding="inspoButton">
-            <constraints/>
-            <properties>
-              <background color="-394759"/>
-              <font name="Apple Braille" size="18" style="0"/>
-              <foreground color="-4495541"/>
-              <maximumSize width="150" height="90"/>
-              <minimumSize width="50" height="30"/>
-              <preferredSize width="100" height="60"/>
-              <text value="Inspo"/>
-            </properties>
-          </component>
-          <hspacer id="1b583">
-            <constraints/>
-          </hspacer>
-          <component id="78cad" class="javax.swing.JButton" binding="gameButton">
-            <constraints/>
-            <properties>
-              <background color="-394759"/>
-              <font name="Apple Braille" size="18" style="0"/>
-              <foreground color="-4495541"/>
-              <maximumSize width="150" height="90"/>
-              <minimumSize width="50" height="30"/>
-              <preferredSize width="100" height="60"/>
-              <text value="Game"/>
-            </properties>
-          </component>
-        </children>
-      </toolbar>
-      <hspacer id="612ee">
-        <constraints>
-          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
       <component id="25d9" class="javax.swing.JButton" binding="logOutButton">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="30" height="20"/>
-            <preferred-size width="80" height="40"/>
-            <maximum-size width="120" height="60"/>
+            <minimum-size width="30" height="10"/>
+            <preferred-size width="80" height="30"/>
+            <maximum-size width="120" height="50"/>
           </grid>
         </constraints>
         <properties>
@@ -422,12 +344,84 @@
       </component>
       <component id="b0d8f" class="javax.swing.JButton" binding="clearButton" default-binding="true">
         <constraints>
-          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="30" height="10"/>
+            <preferred-size width="80" height="30"/>
+            <maximum-size width="120" height="50"/>
+          </grid>
         </constraints>
         <properties>
+          <background color="-4950962"/>
+          <foreground color="-4950962"/>
           <text value="Clear "/>
         </properties>
       </component>
+      <component id="c79b0" class="javax.swing.JButton" binding="toDoButton">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394759"/>
+          <font name="Apple Braille" size="18" style="0"/>
+          <foreground color="-4495541"/>
+          <maximumSize width="150" height="90"/>
+          <minimumSize width="50" height="30"/>
+          <preferredSize width="100" height="60"/>
+          <text value="To-Do"/>
+        </properties>
+      </component>
+      <component id="78cad" class="javax.swing.JButton" binding="gameButton">
+        <constraints>
+          <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394759"/>
+          <font name="Apple Braille" size="18" style="0"/>
+          <foreground color="-4495541"/>
+          <maximumSize width="150" height="90"/>
+          <minimumSize width="50" height="30"/>
+          <preferredSize width="100" height="60"/>
+          <text value="Game"/>
+        </properties>
+      </component>
+      <component id="e03f9" class="javax.swing.JButton" binding="inspoButton">
+        <constraints>
+          <grid row="13" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394759"/>
+          <font name="Apple Braille" size="18" style="0"/>
+          <foreground color="-4495541"/>
+          <maximumSize width="150" height="90"/>
+          <minimumSize width="50" height="30"/>
+          <preferredSize width="100" height="60"/>
+          <text value="Inspo"/>
+        </properties>
+      </component>
+      <component id="8ee2c" class="javax.swing.JButton" binding="diaryButton">
+        <constraints>
+          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394759"/>
+          <font name="Apple Braille" size="18" style="0"/>
+          <foreground color="-4495541"/>
+          <maximumSize width="150" height="90"/>
+          <minimumSize width="50" height="30"/>
+          <preferredSize width="100" height="60"/>
+          <text value="Diary"/>
+        </properties>
+      </component>
+      <vspacer id="ce946">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="44256">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
     </children>
   </grid>
 </form>

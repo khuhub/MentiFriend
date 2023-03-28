@@ -1,6 +1,8 @@
 package menti.ui;
 import javax.swing.*;
 import java.awt.event.*;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 public class Diary extends JFrame{
     private JButton newEntryButton;
@@ -30,6 +32,13 @@ public class Diary extends JFrame{
     private JSlider slider6;
     private JSlider slider7;
     private JButton summaryButton;
+    private JLabel mondayLabel;
+    private JLabel tuesdayLabel;
+    private JLabel wednesdayLabel;
+    private JLabel thursdayLabel;
+    private JLabel fridayLabel;
+    private JLabel saturdayLabel;
+    private JLabel sundayLabel;
 
     private static String text1;
     private static String text2;
@@ -55,7 +64,13 @@ public class Diary extends JFrame{
     private static int val6;
     private static int val7;
 
-
+    private static boolean dayVisibility1;
+    private static boolean dayVisibility2;
+    private static boolean dayVisibility3;
+    private static boolean dayVisibility4;
+    private static boolean dayVisibility5;
+    private static boolean dayVisibility6;
+    private static boolean dayVisibility7;
 
 
 
@@ -73,8 +88,6 @@ public class Diary extends JFrame{
         diaryTextSpace7.setText(text7);
 
 
-
-
         slider1.setValue(val1);
         slider2.setValue(val2);
         slider3.setValue(val3);
@@ -82,6 +95,14 @@ public class Diary extends JFrame{
         slider5.setValue(val5);
         slider6.setValue(val6);
         slider7.setValue(val7);
+
+        mondayLabel.setVisible(dayVisibility1);
+        tuesdayLabel.setVisible(dayVisibility2);
+        wednesdayLabel.setVisible(dayVisibility3);
+        thursdayLabel.setVisible(dayVisibility4);
+        fridayLabel.setVisible(dayVisibility5);
+        saturdayLabel.setVisible(dayVisibility6);
+        sundayLabel.setVisible(dayVisibility7);
 
 
         diaryTextSpace1.addKeyListener(new KeyAdapter() {
@@ -140,65 +161,53 @@ public class Diary extends JFrame{
             }
         });
 
-        slider1.addMouseMotionListener(new MouseMotionAdapter() {
+        slider1.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
-            public void mouseDragged(MouseEvent e) {
-                super.mouseDragged(e);
+            public void propertyChange(PropertyChangeEvent evt) {
                 val1 = slider1.getValue();
             }
         });
 
-        slider2.addMouseMotionListener(new MouseMotionAdapter() {
+
+        slider2.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
-            public void mouseDragged(MouseEvent e) {
-                super.mouseDragged(e);
+            public void propertyChange(PropertyChangeEvent evt) {
                 val2 = slider2.getValue();
-
             }
         });
 
-        slider3.addMouseMotionListener(new MouseMotionAdapter() {
+        slider3.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
-            public void mouseDragged(MouseEvent e) {
-                super.mouseDragged(e);
+            public void propertyChange(PropertyChangeEvent evt) {
                 val3 = slider3.getValue();
-
             }
         });
 
-        slider4.addMouseMotionListener(new MouseMotionAdapter() {
+        slider4.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
-            public void mouseDragged(MouseEvent e) {
-                super.mouseDragged(e);
+            public void propertyChange(PropertyChangeEvent evt) {
                 val4 = slider4.getValue();
-
             }
         });
 
-        slider5.addMouseMotionListener(new MouseMotionAdapter() {
+        slider5.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
-            public void mouseDragged(MouseEvent e) {
-                super.mouseDragged(e);
+            public void propertyChange(PropertyChangeEvent evt) {
                 val5 = slider5.getValue();
-
             }
         });
 
-        slider6.addMouseMotionListener(new MouseMotionAdapter() {
+        slider6.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
-            public void mouseDragged(MouseEvent e) {
-                super.mouseDragged(e);
+            public void propertyChange(PropertyChangeEvent evt) {
                 val6 = slider6.getValue();
-
             }
         });
 
-        slider7.addMouseMotionListener(new MouseMotionAdapter() {
+        slider7.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
-            public void mouseDragged(MouseEvent e) {
-                super.mouseDragged(e);
+            public void propertyChange(PropertyChangeEvent evt) {
                 val7 = slider7.getValue();
-
             }
         });
 
@@ -282,43 +291,46 @@ public class Diary extends JFrame{
                     happyLabel.setVisible(visibility1);
                     mehLabel.setVisible(visibility1);
                     sadLabel.setVisible(visibility1);
+                    mondayLabel.setVisible(true);
+                    dayVisibility1 = true;
                 } else if(count == 2){
                     visibility2 = true;
                     diaryTextSpace2.setVisible(visibility2);
                     slider2.setVisible(visibility2);
-
+                    tuesdayLabel.setVisible(true);
+                    dayVisibility2 = true;
 
                 } else if(count == 3){
                     visibility3 = true;
                     diaryTextSpace3.setVisible(visibility3);
                     slider3.setVisible(visibility3);
-
-
+                    wednesdayLabel.setVisible(true);
+                    dayVisibility3 = true;
                 } else if(count == 4){
                     visibility4 = true;
                     diaryTextSpace4.setVisible(visibility4);
                     slider4.setVisible(visibility4);
-
-
+                    thursdayLabel.setVisible(true);
+                    dayVisibility4 = true;
                 } else if(count == 5) {
                     visibility5 = true;
                     diaryTextSpace5.setVisible(visibility5);
                     slider5.setVisible(visibility5);
-
-
+                    fridayLabel.setVisible(true);
+                    dayVisibility5 = true;
 
                 } else if(count == 6){
                     visibility6 = true;
                     diaryTextSpace6.setVisible(visibility6);
                     slider6.setVisible(visibility6);
-
-
+                    saturdayLabel.setVisible(true);
+                    dayVisibility6 = true;
                 } else if(count == 7){
                     visibility7 = true;
                     diaryTextSpace7.setVisible(visibility7);
                     slider7.setVisible(visibility7);
-
-
+                    sundayLabel.setVisible(true);
+                    dayVisibility7 = true;
                 }
 
                 count ++;
@@ -385,6 +397,21 @@ public class Diary extends JFrame{
                 diaryTextSpace7.setVisible(visibility7);
                 slider7.setVisible(visibility7);
 
+                mondayLabel.setVisible(false);
+                tuesdayLabel.setVisible(false);
+                wednesdayLabel.setVisible(false);
+                thursdayLabel.setVisible(false);
+                fridayLabel.setVisible(false);
+                saturdayLabel.setVisible(false);
+                sundayLabel.setVisible(false);
+
+                dayVisibility1 = false;
+                dayVisibility2 = false;
+                dayVisibility3 = false;
+                dayVisibility4 = false;
+                dayVisibility5 = false;
+                dayVisibility6 = false;
+                dayVisibility7 = false;
 
 
 
@@ -433,6 +460,7 @@ public class Diary extends JFrame{
 
             }
         });
+
     }
 }
 

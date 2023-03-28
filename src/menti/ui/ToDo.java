@@ -4,16 +4,18 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class ToDo extends JFrame {
+
+    //items on user interface
     private JPanel toDoPanel;
-    private JCheckBox ToDoCheck1;
-    private JCheckBox ToDoCheck2;
-    private JCheckBox ToDoCheck3;
-    private JCheckBox ToDoCheck4;
-    private JCheckBox ToDoCheck5;
-    private JCheckBox ToDoCheck6;
-    private JCheckBox ToDoCheck7;
-    private JCheckBox ToDoCheck8;
-    private JCheckBox ToDoCheck9;
+    private JCheckBox toDoCheck1;
+    private JCheckBox toDoCheck2;
+    private JCheckBox toDoCheck3;
+    private JCheckBox toDoCheck4;
+    private JCheckBox toDoCheck5;
+    private JCheckBox toDoCheck6;
+    private JCheckBox toDoCheck7;
+    private JCheckBox toDoCheck8;
+    private JCheckBox toDoCheck9;
     private JCheckBox longTermCheck1;
     private JCheckBox longTermCheck2;
     private JCheckBox longTermCheck3;
@@ -43,7 +45,6 @@ public class ToDo extends JFrame {
     private JTextField longTermEnterText9;
     private JLabel toDoLabel;
     private JLabel longTermLabel;
-    private JToolBar menuOptions;
     private JButton toDoButton;
     private JButton diaryButton;
     private JButton inspoButton;
@@ -51,6 +52,7 @@ public class ToDo extends JFrame {
     private JButton logOutButton;
     private JButton clearButton;
 
+    //text content for toDo text boxes
     private static String toDoText1;
     private static String toDoText2;
     private static String toDoText3;
@@ -61,7 +63,7 @@ public class ToDo extends JFrame {
     private static String toDoText8;
     private static String toDoText9;
 
-
+    //isChecked booleans for toDo checkboxes
     private static boolean toDoBox1;
     private static boolean toDoBox2;
     private static boolean toDoBox3;
@@ -72,6 +74,7 @@ public class ToDo extends JFrame {
     private static boolean toDoBox8;
     private static boolean toDoBox9;
 
+    //text content for longTerm text boxes
     private static String longTermText1;
     private static String longTermText2;
     private static String longTermText3;
@@ -82,6 +85,7 @@ public class ToDo extends JFrame {
     private static String longTermText8;
     private static String longTermText9;
 
+    //isChecked booleans for longTerm checkboxes
     private static boolean longTermBox1;
     private static boolean longTermBox2;
     private static boolean longTermBox3;
@@ -93,8 +97,10 @@ public class ToDo extends JFrame {
     private static boolean longTermBox9;
 
     public ToDo(){
+
         setContentPane(toDoPanel);
 
+        //set toDo text boxes as the previous entries
         toDoEnterText1.setText(toDoText1);
         toDoEnterText2.setText(toDoText2);
         toDoEnterText3.setText(toDoText3);
@@ -105,16 +111,18 @@ public class ToDo extends JFrame {
         toDoEnterText8.setText(toDoText8);
         toDoEnterText9.setText(toDoText9);
 
-        ToDoCheck1.setSelected(toDoBox1);
-        ToDoCheck2.setSelected(toDoBox2);
-        ToDoCheck3.setSelected(toDoBox3);
-        ToDoCheck4.setSelected(toDoBox4);
-        ToDoCheck5.setSelected(toDoBox5);
-        ToDoCheck6.setSelected(toDoBox6);
-        ToDoCheck7.setSelected(toDoBox7);
-        ToDoCheck8.setSelected(toDoBox8);
-        ToDoCheck9.setSelected(toDoBox9);
+        //set toDo checkboxes as previous completion state
+        toDoCheck1.setSelected(toDoBox1);
+        toDoCheck2.setSelected(toDoBox2);
+        toDoCheck3.setSelected(toDoBox3);
+        toDoCheck4.setSelected(toDoBox4);
+        toDoCheck5.setSelected(toDoBox5);
+        toDoCheck6.setSelected(toDoBox6);
+        toDoCheck7.setSelected(toDoBox7);
+        toDoCheck8.setSelected(toDoBox8);
+        toDoCheck9.setSelected(toDoBox9);
 
+        //set longTerm text boxes as the previous entries
         longTermEnterText1.setText(longTermText1);
         longTermEnterText2.setText(longTermText2);
         longTermEnterText3.setText(longTermText3);
@@ -125,6 +133,7 @@ public class ToDo extends JFrame {
         longTermEnterText8.setText(longTermText8);
         longTermEnterText9.setText(longTermText9);
 
+        //set longTerm checkboxes as previous completion state
         longTermCheck1.setSelected(longTermBox1);
         longTermCheck2.setSelected(longTermBox2);
         longTermCheck3.setSelected(longTermBox3);
@@ -135,7 +144,7 @@ public class ToDo extends JFrame {
         longTermCheck8.setSelected(longTermBox8);
         longTermCheck9.setSelected(longTermBox9);
 
-
+        //when diaryButton is clicked, change screen to Diary screen
         diaryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -145,6 +154,8 @@ public class ToDo extends JFrame {
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
+
+        //when inspoButton is clicked, change screen to Inspo screen
         inspoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -155,12 +166,16 @@ public class ToDo extends JFrame {
 
             }
         });
+
+        //when gameButton is clicked, change screen to Game screen
         gameButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //when logOutButton is clicked, change screen to EnterApp screen
         logOutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -171,6 +186,7 @@ public class ToDo extends JFrame {
             }
         });
 
+        //when the user inputs into a toDo text box, save the user input
         toDoEnterText1.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -234,60 +250,64 @@ public class ToDo extends JFrame {
                 toDoText9 = toDoEnterText9.getText();
             }
         });
-        ToDoCheck1.addItemListener(new ItemListener() {
+
+        //when the user checks a toDo checkbox, save the status of the checkbox
+        toDoCheck1.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox1 = ToDoCheck1.isSelected();
+                toDoBox1 = toDoCheck1.isSelected();
             }
         });
-        ToDoCheck2.addItemListener(new ItemListener() {
+        toDoCheck2.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox2 = ToDoCheck2.isSelected();
+                toDoBox2 = toDoCheck2.isSelected();
             }
         });
-        ToDoCheck3.addItemListener(new ItemListener() {
+        toDoCheck3.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox3 = ToDoCheck3.isSelected();
+                toDoBox3 = toDoCheck3.isSelected();
             }
         });
-        ToDoCheck4.addItemListener(new ItemListener() {
+        toDoCheck4.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox4 = ToDoCheck4.isSelected();
+                toDoBox4 = toDoCheck4.isSelected();
             }
         });
-        ToDoCheck5.addItemListener(new ItemListener() {
+        toDoCheck5.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox5 = ToDoCheck5.isSelected();
+                toDoBox5 = toDoCheck5.isSelected();
             }
         });
-        ToDoCheck6.addItemListener(new ItemListener() {
+        toDoCheck6.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox6 = ToDoCheck6.isSelected();
+                toDoBox6 = toDoCheck6.isSelected();
             }
         });
-        ToDoCheck7.addItemListener(new ItemListener() {
+        toDoCheck7.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox7 = ToDoCheck7.isSelected();
+                toDoBox7 = toDoCheck7.isSelected();
             }
         });
-        ToDoCheck8.addItemListener(new ItemListener() {
+        toDoCheck8.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox8 = ToDoCheck8.isSelected();
+                toDoBox8 = toDoCheck8.isSelected();
             }
         });
-        ToDoCheck9.addItemListener(new ItemListener() {
+        toDoCheck9.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                toDoBox9 = ToDoCheck9.isSelected();
+                toDoBox9 = toDoCheck9.isSelected();
             }
         });
+
+        //when the user inputs into a longTerm text box, save the user input
         longTermEnterText1.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -351,6 +371,8 @@ public class ToDo extends JFrame {
                 longTermText9 = longTermEnterText9.getText();
             }
         });
+
+        //when the user checks a longTerm checkbox, save the status of the checkbox
         longTermCheck1.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
@@ -407,19 +429,19 @@ public class ToDo extends JFrame {
             }
         });
 
-
+        //when clearButton is clicked, clear all the text in the text boxes and the checkboxes
         clearButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ToDoCheck1.setSelected(false);
-                ToDoCheck2.setSelected(false);
-                ToDoCheck3.setSelected(false);
-                ToDoCheck4.setSelected(false);
-                ToDoCheck5.setSelected(false);
-                ToDoCheck6.setSelected(false);
-                ToDoCheck7.setSelected(false);
-                ToDoCheck8.setSelected(false);
-                ToDoCheck9.setSelected(false);
+                toDoCheck1.setSelected(false);
+                toDoCheck2.setSelected(false);
+                toDoCheck3.setSelected(false);
+                toDoCheck4.setSelected(false);
+                toDoCheck5.setSelected(false);
+                toDoCheck6.setSelected(false);
+                toDoCheck7.setSelected(false);
+                toDoCheck8.setSelected(false);
+                toDoCheck9.setSelected(false);
 
                 toDoEnterText1.setText("");
                 toDoEnterText2.setText("");
@@ -450,10 +472,8 @@ public class ToDo extends JFrame {
                 longTermEnterText7.setText("");
                 longTermEnterText8.setText("");
                 longTermEnterText9.setText("");
-
             }
         });
     }
-
 
 }
