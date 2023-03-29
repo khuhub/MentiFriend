@@ -48,7 +48,7 @@ public class ToDo extends JFrame {
     private JButton toDoButton;
     private JButton diaryButton;
     private JButton inspoButton;
-    private JButton gameButton;
+    private JButton fidgetButton;
     private JButton logOutButton;
     private JButton clearButton;
 
@@ -163,15 +163,17 @@ public class ToDo extends JFrame {
                 frame.setVisible(true);
                 frame.setSize(800,500);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
             }
         });
 
-        //when gameButton is clicked, change screen to Game screen
-        gameButton.addActionListener(new ActionListener() {
+        //when fidgetButton is clicked, change screen to Fidget screen
+        fidgetButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Fidget frame = new Fidget();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
 
@@ -379,7 +381,6 @@ public class ToDo extends JFrame {
                 longTermBox1 = longTermCheck1.isSelected();
             }
         });
-
         longTermCheck2.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {

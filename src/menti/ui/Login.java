@@ -15,7 +15,6 @@ public class Login extends JFrame{
     private JTextField userNameInput;
     private JLabel userNameLabel;
     private JButton returnEnterButton;
-    private JPasswordField login;
 
     public Login() {
 

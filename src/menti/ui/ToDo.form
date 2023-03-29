@@ -370,7 +370,7 @@
           <text value="To-Do"/>
         </properties>
       </component>
-      <component id="78cad" class="javax.swing.JButton" binding="gameButton">
+      <component id="78cad" class="javax.swing.JButton" binding="fidgetButton">
         <constraints>
           <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -381,7 +381,7 @@
           <maximumSize width="150" height="90"/>
           <minimumSize width="50" height="30"/>
           <preferredSize width="100" height="60"/>
-          <text value="Game"/>
+          <text value="Fidget"/>
         </properties>
       </component>
       <component id="e03f9" class="javax.swing.JButton" binding="inspoButton">

@@ -11,11 +11,10 @@ public class Inspo extends JFrame{
     private JButton toDoButton;
     private JButton diaryButton;
     private JButton inspoButton;
-    private JButton gameButton;
+    private JButton fidgetButton;
     private JLabel inspoLabel;
     private JButton generateInspoButton;
     private JButton logOutButton;
-    private JTextPane textPane1;
 
     private String[] quotes = {"When you have a dream, you've got to grab it and never let go", "Nothing is impossible, the word itself says I'm possible!",
                                 "It is often the small steps, not the giant leaps, that bring about the most lasting change.",
@@ -59,11 +58,11 @@ public class Inspo extends JFrame{
             }
         });
 
-        //when gameButton is clicked, change screen to Game screen
-        gameButton.addActionListener(new ActionListener() {
+        //when fidgetButton is clicked, change screen to Fidget screen
+        fidgetButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Game frame = new Game();
+                Fidget frame = new Fidget();
                 frame.setVisible(true);
                 frame.setSize(800,500);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

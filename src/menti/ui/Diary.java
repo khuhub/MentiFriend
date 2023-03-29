@@ -1,16 +1,18 @@
 package menti.ui;
+
 import javax.swing.*;
 import java.awt.event.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Diary extends JFrame{
+
+    //items on user interface
     private JButton newEntryButton;
-    private JScrollPane diarySpace;
     private JButton toDoButton;
     private JButton diaryButton;
     private JButton inspoButton;
-    private JButton gameButton;
+    private JButton fidgetButton;
     private JButton logOutButton;
     private JTextPane diaryTextSpace1;
     private JPanel diaryPanel;
@@ -40,6 +42,7 @@ public class Diary extends JFrame{
     private JLabel saturdayLabel;
     private JLabel sundayLabel;
 
+    //text content of diary entries
     private static String text1;
     private static String text2;
     private static String text3;
@@ -48,6 +51,7 @@ public class Diary extends JFrame{
     private static String text6;
     private static String text7;
 
+    //visibility of the text boxes
     private static boolean visibility1;
     private static boolean visibility2;
     private static boolean visibility3;
@@ -56,6 +60,7 @@ public class Diary extends JFrame{
     private static boolean visibility6;
     private static boolean visibility7;
 
+    //slider status
     private static int val1;
     private static int val2;
     private static int val3;
@@ -64,6 +69,7 @@ public class Diary extends JFrame{
     private static int val6;
     private static int val7;
 
+    //visibility of day labels
     private static boolean dayVisibility1;
     private static boolean dayVisibility2;
     private static boolean dayVisibility3;
@@ -72,13 +78,13 @@ public class Diary extends JFrame{
     private static boolean dayVisibility6;
     private static boolean dayVisibility7;
 
-
-
     private int count = 1;
 
     public Diary() {
+
         setContentPane(diaryPanel);
 
+        //set text content as previous diary entries
         diaryTextSpace1.setText(text1);
         diaryTextSpace2.setText(text2);
         diaryTextSpace3.setText(text3);
@@ -87,7 +93,7 @@ public class Diary extends JFrame{
         diaryTextSpace6.setText(text6);
         diaryTextSpace7.setText(text7);
 
-
+        //set slider value to previous value
         slider1.setValue(val1);
         slider2.setValue(val2);
         slider3.setValue(val3);
@@ -96,6 +102,7 @@ public class Diary extends JFrame{
         slider6.setValue(val6);
         slider7.setValue(val7);
 
+        //hide day labels
         mondayLabel.setVisible(dayVisibility1);
         tuesdayLabel.setVisible(dayVisibility2);
         wednesdayLabel.setVisible(dayVisibility3);
@@ -104,7 +111,7 @@ public class Diary extends JFrame{
         saturdayLabel.setVisible(dayVisibility6);
         sundayLabel.setVisible(dayVisibility7);
 
-
+        //save text content of diary entries
         diaryTextSpace1.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -112,7 +119,6 @@ public class Diary extends JFrame{
                 text1 = diaryTextSpace1.getText();
             }
         });
-
         diaryTextSpace2.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -120,7 +126,6 @@ public class Diary extends JFrame{
                 text2 = diaryTextSpace2.getText();
             }
         });
-
         diaryTextSpace3.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -128,7 +133,6 @@ public class Diary extends JFrame{
                 text3 = diaryTextSpace3.getText();
             }
         });
-
         diaryTextSpace4.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -136,7 +140,6 @@ public class Diary extends JFrame{
                 text4 = diaryTextSpace4.getText();
             }
         });
-
         diaryTextSpace5.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -144,7 +147,6 @@ public class Diary extends JFrame{
                 text5 = diaryTextSpace5.getText();
             }
         });
-
         diaryTextSpace6.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -152,7 +154,6 @@ public class Diary extends JFrame{
                 text6 = diaryTextSpace6.getText();
             }
         });
-
         diaryTextSpace7.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -161,49 +162,43 @@ public class Diary extends JFrame{
             }
         });
 
+        //save slider status
         slider1.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
                 val1 = slider1.getValue();
             }
         });
-
-
         slider2.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
                 val2 = slider2.getValue();
             }
         });
-
         slider3.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
                 val3 = slider3.getValue();
             }
         });
-
         slider4.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
                 val4 = slider4.getValue();
             }
         });
-
         slider5.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
                 val5 = slider5.getValue();
             }
         });
-
         slider6.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
                 val6 = slider6.getValue();
             }
         });
-
         slider7.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
@@ -211,10 +206,7 @@ public class Diary extends JFrame{
             }
         });
 
-
-
-
-
+        //when inspoButton is clicked, change the screen to Inspo screen
         inspoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -222,15 +214,21 @@ public class Diary extends JFrame{
                 frame.setVisible(true);
                 frame.setSize(800,500);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
             }
         });
-        gameButton.addActionListener(new ActionListener() {
+
+        //when fidgetButton is clicked, change the screen to Fidget Screen
+        fidgetButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Fidget frame = new Fidget();
+                frame.setVisible(true);
+                frame.setSize(800,500);
+                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
+
+        //when logOutButton is clicked, change the screen to EnterApp screen
         logOutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -241,6 +239,7 @@ public class Diary extends JFrame{
             }
         });
 
+        //when toDoButton is clicked, change the screen to ToDo screen
         toDoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -251,11 +250,14 @@ public class Diary extends JFrame{
             }
         });
 
-        diaryTextSpace1.setVisible(visibility1);
-        slider1.setVisible(visibility1);
+        //set visibility of emotion labels
         happyLabel.setVisible(visibility1);
         mehLabel.setVisible(visibility1);
         sadLabel.setVisible(visibility1);
+
+        //hide text boxes and slider
+        diaryTextSpace1.setVisible(visibility1);
+        slider1.setVisible(visibility1);
 
         diaryTextSpace2.setVisible(visibility2);
         slider2.setVisible(visibility2);
@@ -275,72 +277,61 @@ public class Diary extends JFrame{
         diaryTextSpace7.setVisible(visibility7);
         slider7.setVisible(visibility7);
 
-
-
-
+        //when newEntryButton is clicked set the visibility of the text box, slider, and emotion labels to true
         newEntryButton.addActionListener(new ActionListener() {
-
-
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(count == 1) {
+                if (count == 1) {
                     visibility1 = true;
                     diaryTextSpace1.setVisible(visibility1);
                     slider1.setVisible(visibility1);
-
                     happyLabel.setVisible(visibility1);
                     mehLabel.setVisible(visibility1);
                     sadLabel.setVisible(visibility1);
                     mondayLabel.setVisible(true);
                     dayVisibility1 = true;
-                } else if(count == 2){
+                } else if (count == 2) {
                     visibility2 = true;
                     diaryTextSpace2.setVisible(visibility2);
                     slider2.setVisible(visibility2);
                     tuesdayLabel.setVisible(true);
                     dayVisibility2 = true;
-
-                } else if(count == 3){
+                } else if (count == 3) {
                     visibility3 = true;
                     diaryTextSpace3.setVisible(visibility3);
                     slider3.setVisible(visibility3);
                     wednesdayLabel.setVisible(true);
                     dayVisibility3 = true;
-                } else if(count == 4){
+                } else if (count == 4) {
                     visibility4 = true;
                     diaryTextSpace4.setVisible(visibility4);
                     slider4.setVisible(visibility4);
                     thursdayLabel.setVisible(true);
                     dayVisibility4 = true;
-                } else if(count == 5) {
+                } else if (count == 5) {
                     visibility5 = true;
                     diaryTextSpace5.setVisible(visibility5);
                     slider5.setVisible(visibility5);
                     fridayLabel.setVisible(true);
                     dayVisibility5 = true;
-
-                } else if(count == 6){
+                } else if (count == 6) {
                     visibility6 = true;
                     diaryTextSpace6.setVisible(visibility6);
                     slider6.setVisible(visibility6);
                     saturdayLabel.setVisible(true);
                     dayVisibility6 = true;
-                } else if(count == 7){
+                } else if (count == 7) {
                     visibility7 = true;
                     diaryTextSpace7.setVisible(visibility7);
                     slider7.setVisible(visibility7);
                     sundayLabel.setVisible(true);
                     dayVisibility7 = true;
                 }
-
-                count ++;
-
+                count++;
             }
-
-
         });
 
-
+        //when clearDiaryButton is clicked, clear the text content of the diary entries
         clearDiaryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -362,8 +353,6 @@ public class Diary extends JFrame{
                 slider5.setValue(50);
                 slider6.setValue(50);
                 slider7.setValue(50);
-
-
 
                 visibility1 = false;
                 visibility2 = false;
@@ -412,14 +401,10 @@ public class Diary extends JFrame{
                 dayVisibility5 = false;
                 dayVisibility6 = false;
                 dayVisibility7 = false;
-
-
-
             }
         });
 
-
-
+        //when summaryButton is clicked, summarize and score the emotions of the users
         summaryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -454,15 +439,11 @@ public class Diary extends JFrame{
                     numDaysEntered ++;
                 }
 
+                //total score divided by the number of entries
                 int summaryScore = sum / numDaysEntered;
                 JOptionPane.showMessageDialog(summaryButton, "Your happiness score for the week is: " + summaryScore + " out of " + 100);
-
-
             }
         });
-
     }
+
 }
-
-
-//the sliders start at 0 instead of 50 (middle) - idk how to fix

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="menti.ui.Fidget">
+  <grid id="27dc6" binding="gamePanel" layout-manager="GridLayoutManager" row-count="10" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="812" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-7894817"/>
+      <enabled value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="b56de" class="javax.swing.JButton" binding="logOutButton">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="30" height="20"/>
+            <preferred-size width="80" height="39"/>
+            <maximum-size width="120" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <foreground color="-5606732"/>
+          <text value="Logout"/>
+        </properties>
+      </component>
+      <component id="66ec9" class="javax.swing.JButton" binding="clearButton">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="30" height="20"/>
+            <preferred-size width="80" height="39"/>
+            <maximum-size width="120" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12828863"/>
+          <foreground color="-12828748"/>
+          <text value=""/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="99c97" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <horizontalAlignment value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="30f73" class="javax.swing.JCheckBox" binding="checkBox2" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="49378" class="javax.swing.JCheckBox" binding="checkBox3" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="aa832" class="javax.swing.JCheckBox" binding="checkBox4" default-binding="true">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7f831" class="javax.swing.JRadioButton" binding="radioButton1" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9751831"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d32cf" class="javax.swing.JRadioButton" binding="radioButton2" default-binding="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9751831"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="6c5b9" class="javax.swing.JRadioButton" binding="radioButton3" default-binding="true">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9751831"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="66f2b" class="javax.swing.JRadioButton" binding="radioButton4" default-binding="true">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9751831"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <hspacer id="c938c">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="513b" class="javax.swing.JButton" binding="toDoButton">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="60"/>
+            <preferred-size width="100" height="60"/>
+            <maximum-size width="100" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <font size="18"/>
+          <foreground color="-5606732"/>
+          <label value="To-Do"/>
+          <text value="To-Do"/>
+        </properties>
+      </component>
+      <component id="99d65" class="javax.swing.JButton" binding="diaryButton">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="60"/>
+            <preferred-size width="100" height="60"/>
+            <maximum-size width="100" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <font size="18"/>
+          <foreground color="-5606732"/>
+          <inheritsPopupMenu value="false"/>
+          <label value="Diary"/>
+          <text value="Diary"/>
+        </properties>
+      </component>
+      <component id="3874f" class="javax.swing.JButton" binding="inspoButton">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="60"/>
+            <preferred-size width="100" height="60"/>
+            <maximum-size width="100" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <font size="18"/>
+          <foreground color="-5606732"/>
+          <text value="Inspo"/>
+        </properties>
+      </component>
+      <component id="aba3a" class="javax.swing.JButton" binding="fidgetButton">
+        <constraints>
+          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="60"/>
+            <preferred-size width="100" height="60"/>
+            <maximum-size width="100" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <font size="18"/>
+          <foreground color="-5606732"/>
+          <text value="Fidget"/>
+        </properties>
+      </component>
+      <vspacer id="a7e0e">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="9ac0a" class="javax.swing.JSpinner" binding="spinner1" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <foreground color="-5606732"/>
+        </properties>
+      </component>
+      <component id="e2e3e" class="javax.swing.JSlider" binding="slider1" default-binding="true">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5606732"/>
+          <foreground color="-9751831"/>
+          <paintLabels value="false"/>
+        </properties>
+      </component>
+      <vspacer id="5ed6e">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="5fc84">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="a0949">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
