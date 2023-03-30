@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="reformat everything">
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/Fidget.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menti/ui/Fidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_21_23,_4_19_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_21_23__4_19_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="4ef4f4e6-067a-4559-bc05-262949ea01ed" name="Changes" comment="DONE!!!!!!!!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/Diary.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Diary.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Diary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/Game.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/Inspo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Inspo.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/Inspo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Inspo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/ToDo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/ToDo.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menti/ui/ToDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menti/ui/ToDo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679983906116</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="DONE!!!!!!!!!!">
+      <created>1680068004061</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680068004061</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -200,6 +193,7 @@
     <MESSAGE value="inspo panel" />
     <MESSAGE value="diary" />
     <MESSAGE value="reformat everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformat everything" />
+    <MESSAGE value="DONE!!!!!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="DONE!!!!!!!!!!" />
   </component>
 </project>
